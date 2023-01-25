@@ -1,0 +1,18 @@
+Package: fdaPDEgr3
+Type: Utilities to generate fdaPDE mesh using SCHISM gr3 files
+Title: fdapde mesh reader and writer for gr3 files and writer for landxml 
+Version: 0.1.0
+Author: Eli Ateljevich, Sophie Munger
+Maintainer: Sophie Munger <Sophie.Munger@water.ca.gov>
+Description: Functions that read gr3 files and create a mesh artifacts that
+    can be used with fdaPDE interpolation
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends:
+    fdaPDE,
+    rgl,
+    stringr,
+    sp,
+    rgdal,
+    minixml

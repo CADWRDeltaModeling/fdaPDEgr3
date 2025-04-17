@@ -1,9 +1,6 @@
 library(fdaPDE)
-library(rgl)
 library(stringr)
-library(sp)
-library(rgdal)
-library(minixml)
+#library(minixml)
 
 read_bnd_seg_nodes <- function(all_lines, idx_start){
    n_seg_nodes <- as.numeric(unlist(strsplit(all_lines[idx_start],' '))[1])

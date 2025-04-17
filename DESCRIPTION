@@ -11,8 +11,5 @@ Encoding: UTF-8
 LazyData: true
 Depends:
     fdaPDE,
-    rgl,
     stringr,
-    sp,
-    rgdal,
-    minixml
+    sp

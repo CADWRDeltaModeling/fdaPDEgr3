@@ -53,7 +53,7 @@ read_bnd_nodes <- function(all_lines, idx_start) {
 #' @param scale not sure
 #' @return A matrix of the infile
 #' @export
-write_gr3_output_mod <- function(gr3_mesh, output_fname, desc_text, elv_smooth, i=1, target=1, scale=1){
+write_gr3_output <- function(gr3_mesh, output_fname, desc_text, elv_smooth, i=1, target=1, scale=1){
   #target=1: smooth z, target=2: smooth dz
     nnode <- gr3_mesh@nnode
     idx_elm_start <- nnode + 2 + 1
@@ -166,7 +166,7 @@ gr3_mesh <- setClass("gr3_mesh",
               fmt_nodes = "numeric", all_lines = "character"))
 
 
-read_gr3_mod <- function (fname, scale=1) {
+read_gr3 <- function (fname, scale=1) {
   # cannot hendle the case without land boundaries
   con <- file(fname,'r')
   all_lines <- readLines(con,n = -1)
